@@ -1,2 +1,4 @@
 # hello_github_actions
-testing a github actions 
+
+This is interesting way to do things
+testing a github actions
