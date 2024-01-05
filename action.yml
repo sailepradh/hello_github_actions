@@ -10,7 +10,7 @@ outputs:
     description: "Square of a input"
     value: ${{ steps.get-square.outputs.num_squared }}
 runs:
-  using:: "composite"
+  using: "composite"
   steps:
     - name: Install Python
       uses: actions/setup-python@v4
@@ -25,5 +25,5 @@ runs:
       shell: bash
     - name: Fetch the numbers' square
       id: get-square
-      runs: python src/get_num_square.py
+      run: python src/get_num_square.py
       shell: bash
